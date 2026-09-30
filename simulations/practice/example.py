@@ -102,10 +102,13 @@ drogue = simpleRocket.add_parachute(
 )
 
 # simpleRocket.plots.static_margin() 
-# simpleRocket.draw()
+simpleRocket.draw()
 
 test_flight = Flight(
-    rocket=simpleRocket, environment=environment , rail_length=5.2 , inclination=85 , heading=0)
+rocket=simpleRocket, environment=environment , rail_length=5.2 , inclination=85 , heading=0)
 
-test_flight.info()
-test_flight.plots.trajectory_3d()
+# test_flight.info()
+# test_flight.plots.trajectory_3d()
+
+
+simpleRocket.get_inertia_tensor_derivative_at_time(5)

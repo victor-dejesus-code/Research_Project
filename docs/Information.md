@@ -12,3 +12,15 @@
 # OpenRocket Technical Documentation Chapter 3.1 and 3.2 : Aerodynamic properties / Normal forces and pitching
 ##  Reading Notes : 
 
+
+# General relevant information
+
+### High power rocketry (HPR) is basically scaled up model rocketry. There are no weight restrictions, and they can use pre-manufactured solid or hybrid rocket motors in the range of H–O. The combined total impulse of all motors may not exceed 81920 Ns. 
+
+### The NAR safety code forbids launching a model rocket at an angle greater than 30◦ from vertical. 
+
+### When the propellant has been used,the rocket is typically at its maximum velocity. 
+
+### important parameter of a rocket motor is the thrust given by the motor. This defines the mass that may be lifted by the motor and the acceleration achieved. Small model rocket motors typically have an average thrust of about 3–10 N, while high-power rocket motors can have thrusts in excess of 5 000 N 
+
+### The nitrous oxide tank is self-pressurized by its natural vapor pressure. However, since temperature greatly affects the vapor pressure of nitrous oxide, the thrust of a hybrid motor is also diminished if the oxidizer is cold. On the other hand, the motor will burn longer in this case, and since nitrous oxide is denser when cold, the motor may even yield a greater total impulse.
