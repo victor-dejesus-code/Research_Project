@@ -12,6 +12,7 @@
 # OpenRocket Technical Documentation Chapter 3.1 and 3.2 : Aerodynamic properties / Normal forces and pitching
 ##  Reading Notes : 
 
+### forces are normalized by the current dynamic pressure $q = 1/2ρ(v_0)^2 $ and some characteristic area $A_r$ to get a non-dimensional force coefficient.Similarly, the moments are normalized by the dynamic pressure, characteristic area and characteristic length d.
 
 # General relevant information
 
