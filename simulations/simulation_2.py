@@ -340,7 +340,7 @@ Flight1 = Flight(
     inclination= 90,
     heading=0,
     max_time_step=0.01,
-    max_time= 5
+    max_time= 40
 )
 
 Flight2 = Flight(
@@ -350,7 +350,7 @@ Flight2 = Flight(
     inclination= 90,
     heading=0,
     max_time_step=0.01,
-    max_time= 5
+    max_time= 40
 )
 
 Flight3 = Flight(
@@ -360,7 +360,7 @@ Flight3 = Flight(
     inclination= 90,
     heading=0,
     max_time_step=0.01,
-    max_time= 5
+    max_time= 40
 )
 
 Flight4 = Flight(
@@ -370,7 +370,7 @@ Flight4 = Flight(
     inclination= 90,
     heading=0,
     max_time_step=0.01,
-    max_time= 5
+    max_time= 40
 )
 
 Flight5 = Flight(
@@ -380,7 +380,7 @@ Flight5 = Flight(
     inclination= 90,
     heading=0,
     max_time_step=0.01,
-    max_time= 5
+    max_time= 40
 )
 
 variables = (
@@ -398,8 +398,31 @@ variables = (
 
 results_directory = Path("simulations/results/simulation_2")
 
-FlightDataExporter(Flight1).export_data(str(results_directory/"flight1.csv"),*variables,time_step=0.01)
-FlightDataExporter(Flight2).export_data(str(results_directory/"flight2.csv"),*variables,time_step=0.01)
-FlightDataExporter(Flight3).export_data(str(results_directory/"flight3.csv"),*variables,time_step=0.01)
-FlightDataExporter(Flight4).export_data(str(results_directory/"flight4.csv"),*variables,time_step=0.01)
-FlightDataExporter(Flight5).export_data(str(results_directory/"flight5.csv"),*variables,time_step=0.01)
+# FlightDataExporter(Flight1).export_data(str(results_directory/"flight1_with_more_time.csv"),*variables,time_step=0.01)
+# FlightDataExporter(Flight2).export_data(str(results_directory/"flight2_with_more_time.csv"),*variables,time_step=0.01)
+# FlightDataExporter(Flight3).export_data(str(results_directory/"flight3_with_more_time.csv"),*variables,time_step=0.01)
+# FlightDataExporter(Flight4).export_data(str(results_directory/"flight4_with_more_time.csv"),*variables,time_step=0.01)
+# FlightDataExporter(Flight5).export_data(str(results_directory/"flight5_with_more_time.csv"),*variables,time_step=0.01)
+
+
+Flight1.stability_margin()
+Flight1.angle_of_attack()
+Flight1.aerodynamic_spin_moment()
+
+
+Flight2.stability_margin()
+Flight2.angle_of_attack()
+Flight2.aerodynamic_spin_moment()
+
+Flight3.stability_margin()
+Flight3.angle_of_attack()
+Flight3.aerodynamic_spin_moment()
+
+Flight4.stability_margin()
+Flight4.angle_of_attack()
+Flight4.aerodynamic_spin_moment()
+
+Flight5.stability_margin()
+Flight5.angle_of_attack()
+Flight5.aerodynamic_spin_moment()
+
